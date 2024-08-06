@@ -7,7 +7,7 @@ from torch.autograd import Function
 from torch.cuda.amp import custom_bwd, custom_fwd
 
 try:
-    import 3D-Generation_raymarching as _backend
+    import _raymarching as _backend
 except ImportError:
     from .backend import _backend
 
